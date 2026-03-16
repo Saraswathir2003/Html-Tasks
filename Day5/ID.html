@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ID Example</title>
+    <style>
+      #heading {
+        color: green;
+      }
+
+      #box {
+        border: 2px solid black;
+        padding: 10px;
+        background-color: lightyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Welcome All</h1>
+
+    <div id="box">This is a box</div>
+
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+      function changeText() {
+        document.getElementById("heading").innerHTML = "Thank You for coming!";
+      }
+    </script>
+  </body>
+</html>

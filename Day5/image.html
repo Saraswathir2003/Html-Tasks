@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image Practice</title>
+
+    <style>
+      /* Responsive image */
+      .responsive {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Style for container */
+      .box {
+        width: 300px;
+        border: 2px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Practice</h1>
+
+    <!-- 1. Image with width and height -->
+    <h2>Image</h2>
+    <img
+      src="https://picsum.photos/200/"
+      alt="Fixed Image"
+      width="300"
+      height="200"
+    />
+
+    <!-- 2. Responsive Image -->
+    <h2>Responsive Image</h2>
+    <div class="box">
+      <img
+        src="https://via.placeholder.com/600"
+        alt="Responsive Image"
+        class="responsive"
+      />
+    </div>
+
+    <!-- 3. Clickable Image -->
+    <h2>Clickable Image</h2>
+    <a href="https://www.google.com" target="_blank">
+      <img src="https://via.placeholder.com/200" alt="Click to visit Google" />
+    </a>
+  </body>
+</html>
