@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+
+    <style>
+      h1 {
+        background-color: plum;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+
+    <form action="form.html">
+      <!-- Name -->
+      <label for="name">Full Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your full name"
+        required
+      />
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <br /><br />
+
+      <!-- Mobile Number -->
+      <label for="mobile">Mobile Number:</label><br />
+      <input
+        type="tel"
+        id="mobile"
+        placeholder="Enter 10-digit mobile number"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required
+      />
+      <br /><br />
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" required />
+      <br /><br />
+
+      <!-- Password -->
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password (min 6 characters)"
+        minlength="6"
+        required
+      />
+      <br /><br />
+
+      <!-- Gender -->
+      <label>Gender:</label><br />
+      <input type="radio" id="male" name="gender" required />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+
+      <br /><br />
+
+      <!-- Hobbies -->
+      <label>Hobbies:</label><br />
+      <input type="checkbox" />
+      <label for="reading">Reading</label>
+
+      <input type="checkbox" />
+      <label for="sports">Sports</label>
+
+      <input type="checkbox" />
+      <label for="music">Music</label>
+      <br /><br />
+
+      <!-- Age -->
+      <label for="age">Age:</label><br />
+      <input
+        type="number"
+        id="age"
+        placeholder="Enter your age"
+        min="5"
+        max="100"
+        required
+      />
+      <br /><br />
+
+      <!-- Submit -->
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
