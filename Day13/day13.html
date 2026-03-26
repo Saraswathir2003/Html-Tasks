@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #box {
+      width: 80%;
+      max-width: 600px;
+      margin: auto;
+      border: 3px solid black;
+    }
+
+    h1 {
+      font-size: 6vw;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      #box {
+        background-color: lightskyblue;
+      }
+
+      p {
+        color: black;
+        font-style: oblique;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-color: lightpink;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <h1>📚 Benefits of Reading Books</h1>
+    </div>
+    <p>
+      Books expose you to new ideas, cultures, and information. Whether it’s
+      fiction or non-fiction, you learn something new every time you read.
+    </p>
+    <div id="box">
+      <p>A box that takes up 80% of the screen width but no more than 600px</p>
+    </div>
+  </body>
+</html>
